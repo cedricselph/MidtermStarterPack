@@ -4,22 +4,23 @@ import java.util.Date;
 
 public class Staff extends Employee {
 
-	 private String Title;
+	 private static Object eTitle;
+	 
+	 public static Object Title(){
+			return Staff.eTitle;
+			}
 
-	   public Staff(String title){
-	        this.Title = title;
-	    }
+	 public static Object geteTitle() {
+		return eTitle;
+	}
 
-	    public void setTitle(String title){
-	        this.Title = title;
-	    }
-	    public String getTitle(){
-	        return this.Title;
-	    }
+	 
+	 public static void setTitle(Object eTitle) {
+		Staff.eTitle = eTitle;
+	}
 
-    
 
-    
+
 	public Staff(String FirstName, String MiddleName, String LastName,
 			Date DOB, String Address, String Phone_number, String Email,
 			String officeHours, int rank, double salary, Date hireDate,
@@ -29,7 +30,7 @@ public class Staff extends Employee {
 		super(FirstName, MiddleName, LastName, DOB, Address, Phone_number,
 				Email, officeHours, salary, hireDate);
 		
-		this.Title = Title;
+		Staff.setTitle(eTitle);
 	}
 
 }

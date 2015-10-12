@@ -5,6 +5,8 @@ package com.cisc181.core;
 
 import static org.junit.Assert.*;
 
+
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -12,10 +14,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * @author Dad
+ * @author was Dad, now @author Cedric
  *
  */
 public class Employee_Test {
+	
+
+	
+	
+	
+	
+	
+	
 
 	/**
 	 * @throws java.lang.Exception
